@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weartake</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter&family=Poppins&display=swap" rel="stylesheet">
+    <script defer src="./js/database.js"></script>
+    <script defer src="./js/Index.js"></script>
+    
+    
+</head>
+<body>
+    <header>
+        <h1>Weartake</h1>
+        <nav>
+            <ul class="navLinks">
+                <li><button class="todos" href="#">Todos</button></li>
+                <li><button class="acessorios" href="#">Acessórios</button></li>
+                <li><button class="calcados" href="#">Calçados</button></li>
+                <li><button class="camisetas" href="#">Camisetas</button></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <main class="container">
+        
+        <ul class="listaProdutos">
+            <!-- <li class="produto">
+                <img src="/E-commerce parte 1/m1-entrega-capstone-ecommerce-MatheusGomes064/img/jaqueta.svg" alt="" title="" class="imagemProduto">
+                <div class="especificacao">
+                    <p class="tipoProduto">Camisetas</p>
+                    <p class="nomeProduto">Lightweight Jacket</p>
+                    <p class="produtoDescricao">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
+                    <p class="produtoPreco">R$ 100,00</p>
+                    <button class="adicionar">Adicionar ao carrinho</button>
+
+                </div>
+            </li>
+
+            <li class="produto">
+                <img src="/E-commerce parte 1/m1-entrega-capstone-ecommerce-MatheusGomes064/img/gorro.svg" alt="" title="" class="imagemProduto">
+                <div class="especificacao">
+                    <p class="tipoProduto">Camisetas</p>
+                    <p class="nomeProduto">Black Hat</p>
+                    <p class="produtoDescricao">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...</p>
+                    <p class="produtoPreco">R$ 100,00</p>
+                    <button class="adicionar">Adicionar ao carrinho</button>
+
+                </div>
+            </li>
+
+            <li class="produto">
+                <img src="/E-commerce parte 1/m1-entrega-capstone-ecommerce-MatheusGomes064/img/mascara.svg" alt="" title="" class="imagemProduto">
+                <div class="especificacao">
+                    <p class="tipoProduto">Camisetas</p>
+                    <p class="nomeProduto">Mask</p>
+                    <p class="produtoDescricao">Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...</p>
+                    <p class="produtoPreco">R$ 100,00</p>
+                    <button class="adicionar">Adicionar ao carrinho</button>
+
+                </div>
+            </li>
+
+            <li class="produto">
+                <img src="/E-commerce parte 1/m1-entrega-capstone-ecommerce-MatheusGomes064/img/camiseta_preta.svg" alt="" title="" class="imagemProduto">
+                <div class="especificacao">
+                    <p class="tipoProduto">Camisetas</p>
+                    <p class="nomeProduto">T-Shirt</p>
+                    <p class="produtoDescricao">Esta T-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</p>
+                    <p class="produtoPreco"></p>R$ 100,00</p>
+                    <button class="adicionar">Adicionar ao carrinho</button>
+
+                </div>
+            </li>
+
+            <li class="produto">
+                <img src="/E-commerce parte 1/m1-entrega-capstone-ecommerce-MatheusGomes064/img/camiseta_branca.svg" alt="" title="" class="imagemProduto">
+                <div class="especificacao">
+                    <p class="tipoProduto">Camisetas</p>
+                    <p class="nomeProduto">Short-Sleeve T-Shirt</p>
+                    <p class="produtoDescricao">Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais fino...</p>
+                    <p class="produtoPreco">R$ 100,00</p>
+                    <button class="adicionar">Adicionar ao carrinho</button>
+
+                </div>
+            </li>
+
+            <li class="produto">
+                <img src="/E-commerce parte 1/m1-entrega-capstone-ecommerce-MatheusGomes064/img/moletom.svg" alt="" title="" class="imagemProduto">
+                <div class="especificacao">
+                    <p class="tipoProduto">Camisetas</p>
+                    <p class="nomeProduto">Champion Packable Jacket</p>
+                    <p class="produtoDescricao">Projeta-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poléster...</p>
+                    <p class="produtoPreco">R$ 100,00</p>
+                    <button class="adicionar">Adicionar ao carrinho</button>
+
+                </div>
+            </li> -->
+        </ul>
+
+        <section class="pesquisaCarrinho">
+            <div class="barraPesquisa">
+                <input class="Digite" placeholder="Digite aqui sua pesquisa" type="text">
+                <button class="btnPesquisar">Pesquisar</button>
+    
+                
+            </div>
+            
+            <div class="carrinhoDeCompras">
+                <p class="carrinho">Carrinho de compras</p>
+
+                <section class="produtosAdicionados">
+                        <!-- <div class="produtosCarrinho">
+                        <img class="fotoNoCarrinho" src="/E-commerce parte 1/m1-entrega-capstone-ecommerce-MatheusGomes064/img/jaqueta.svg" alt="jaqueta">
+                        <div>
+                            <p><strong>Lightweight Jacket</strong></p>
+                            <p><strong>R$ 100,00</strong></p>
+                            <button class="adicionar">Remover produto</button>
+                        </div>
+                    </div>
+
+                    <div class="produtosCarrinho">
+                        <img class="fotoNoCarrinho" src="/E-commerce parte 1/m1-entrega-capstone-ecommerce-MatheusGomes064/img/gorro.svg" alt="jaqueta">
+                        <div>
+                            <p><strong>Black Hat</strong></p>
+                            <p><strong>R$ 100,00</strong></p>
+                            <button class="adicionar">Remover produto</button>
+                        </div>
+                    </div>
+
+                    <div class="produtosCarrinho">
+                        <img class="fotoNoCarrinho" src="/E-commerce parte 1/m1-entrega-capstone-ecommerce-MatheusGomes064/img/mascara.svg" alt="jaqueta">
+                        <div>
+                            <p><strong>Mask</strong></p>
+                            <p><strong>R$ 100,00</strong></p>
+                            <button class="adicionar">Remover produto</button>
+                        </div>
+                    </div> -->
+                    
+                </section>
+
+                <div class="quantidade">
+                    <p>Quantidade:</p>
+                    <p class="quantAdicionada"></p>
+                </div>
+
+                <div class="total">
+                    <p>Total:</p>
+                    <p class="totSomado"></p>
+                </div>
+                
+                
+            </div>
+
+        </section>
+         
+    </main>
+    
+</body>
+</html>
